@@ -10,9 +10,9 @@ Author: Chang-Hyun Mungai
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/photography.css">
+    <link rel="stylesheet" type="text/css" href="css/photography.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/fa031272cc.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Photography Portfolio - Chang-Hyun Mungai</title>
   </head>
 
@@ -29,6 +29,11 @@ Author: Chang-Hyun Mungai
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </nav>
 
@@ -189,19 +194,19 @@ Author: Chang-Hyun Mungai
         <div class="contact-content">
           <div class="contact-links">
             <a href="https://www.instagram.com/unboagable" target="_blank" class="contact-link">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
               <span>Instagram</span>
             </a>
             <a href="mailto:changhyunmungai@gmail.com" class="contact-link">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
               <span>Email</span>
             </a>
             <a href="https://github.com/unboagable" target="_blank" class="contact-link">
-              <i class="fa fa-github" aria-hidden="true"></i>
+              <i class="fab fa-github" aria-hidden="true"></i>
               <span>GitHub</span>
             </a>
             <a href="https://www.linkedin.com/in/changhyunmungai" target="_blank" class="contact-link">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
               <span>LinkedIn</span>
             </a>
           </div>
@@ -215,6 +220,23 @@ Author: Chang-Hyun Mungai
         <p>&copy; 2024 Chang-Hyun Mungai. All rights reserved.</p>
       </div>
     </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
   </body>
 </html>
 

@@ -1,32 +1,111 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Chang-Hyun Mungai's Page</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-        		<li><a href="https://www.linkedin.com/in/changhyunmungai">CV</a></li>
-        		<li><a href="/photography">Photography</a></li>
-        		<li><a href="/">Philanthropic</a></li>
-        		<li><a href="/">Projects</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Welcome</h1>
-				<p>Chang-Hyun Mungai's page</p>
-				<a href="https://github.com/unboagable/software-engineering-roadmap">Software Engineering Roadmap</a>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:changhyunmungai@gmail.com">email me</a></li>
-        		<li><a href="https://github.com/unboagable">github profile</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chang-Hyun Mungai - Software Engineer & Photographer</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">Chang-Hyun Mungai</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="/photography.html">Photography</a></li>
+                <li><a href="https://www.linkedin.com/in/changhyunmungai" target="_blank">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm Chang-Hyun Mungai</h1>
+                <p class="hero-subtitle">Software Engineer & Creative Photographer</p>
+                <p class="hero-description">
+                    Passionate about building innovative software solutions and capturing the beauty of the world through photography.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a dedicated software engineer with a passion for creating meaningful digital experiences. 
+                            When I'm not coding, you'll find me behind a camera, exploring the world and capturing moments 
+                            that tell stories.
+                        </p>
+                        <p>
+                            My journey spans from developing robust software solutions to documenting life's beautiful 
+                            moments through photography. I believe in the power of technology to solve real-world problems 
+                            and the ability of art to inspire and connect people.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Software Engineering Roadmap</h3>
+                        <p>A comprehensive guide for aspiring software engineers covering essential technologies, tools, and career paths.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/unboagable/software-engineering-roadmap" target="_blank" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Photography Portfolio</h3>
+                        <p>A curated collection of my favorite photographs showcasing landscapes, portraits, and candid moments.</p>
+                        <div class="project-links">
+                            <a href="/photography.html" class="btn btn-small">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p>I'm always interested in new opportunities and collaborations.</p>
+                <div class="contact-links">
+                    <a href="mailto:changhyunmungai@gmail.com" class="contact-link">
+                        <span class="contact-icon">✉</span>
+                        Email Me
+                    </a>
+                    <a href="https://github.com/unboagable" target="_blank" class="contact-link">
+                        <span class="contact-icon">🐙</span>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/changhyunmungai" target="_blank" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Chang-Hyun Mungai. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

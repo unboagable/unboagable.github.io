@@ -58,13 +58,14 @@ header ul {
   text-align: center;
   list-style: none;
   margin-bottom: -25px;
+  padding-top: 20px;
 }
 
 header ul li {
   display: inline-grid;
   margin-right: 40px;
   margin-left: 40px;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.75rem;
   color: #383838;
   letter-spacing: 5px;
@@ -74,6 +75,11 @@ header ul li {
 header li a {
   text-decoration: none;
   color: #383838;
+  transition: color 0.3s ease;
+}
+
+header li a:hover {
+  color: #667eea;
 }
 
 .border {
@@ -282,4 +288,69 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+  }
+  
+  .headingtext p {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+  }
+  
+  .topgallery img,
+  .midgallery img,
+  .bottomgallery img {
+    width: 250px;
+    height: 167px;
+  }
+  
+  .mystory {
+    padding-bottom: 60px;
+  }
+  
+  #abouttext {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  header ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .headingtext p {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+  
+  .topgallery img,
+  .midgallery img,
+  .bottomgallery img {
+    width: 200px;
+    height: 133px;
+  }
+  
+  .portfolio h3,
+  .mystory h3,
+  .bottomcontact h3 {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+  }
+  
+  .portfolio p,
+  .mystory p {
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+  }
 }

@@ -10,157 +10,210 @@ Author: Chang-Hyun Mungai
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link to photography stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/photography.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/fa031272cc.js"></script>
-    <title>
-      Photography Portfolio - Chang-Hyun Mungai
-    </title>
+    <title>Photography Portfolio - Chang-Hyun Mungai</title>
   </head>
 
   <body>
-    <header>
-      <div class="row">
-        <div class="col-12">
-          <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="#aboutjump">ABOUT</a></li>
-            <li><a href="#photosjump">PHOTOS</a></li>
-            <li><a href="#contactjump">CONTACT</a></li>
-          </ul>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="/">Chang-Hyun Mungai</a>
         </div>
-        <div class="border">
-          <div class="row">
-            <div class="col-12">
-            </div>
-          </div>
-        </div>
-        <div class="headingtext">
-          <div class="row">
-            <div class="col-12">
-              <p>CHANG-HYUN MUNGAI<p>
-            </div>
-        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>Photography Portfolio</h1>
+        <p class="hero-subtitle">Capturing moments that tell stories</p>
+        <p class="hero-description">
+          A collection of my favorite photographs showcasing landscapes, portraits, and candid moments 
+          that reflect my passion for visual storytelling.
+        </p>
       </div>
     </header>
 
-    <section class="photos">
-      <div id="photosjump"></div>
-      <div class="row">
-        <div class="col-12">
-          <h3>MY PORTFOLIO</h3>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Portfolio</h2>
+          <p class="section-subtitle">A collection of my favorite photographs</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p>MY FAVOURITE PHOTOGRAPHS<p>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfoliogallery">
-      <div class="topgallery">
-        <div class="row">
-          <div class="col-12">
-            <img src="images/IMG_8886.jpg" alt="Photography portfolio image 1" width="300" height="200">
-
-            <img src="images/IMG_8898.jpg" alt="Photography portfolio image 2" width="300" height="200">
-
-            <img src="images/IMG_8972.jpg" alt="Photography portfolio image 3" width="300" height="200">
-          </div>
-        </div>
-      </div>
-      <div class="midgallery">
-        <div class="row">
-          <div class="col-12">
-
-            <img src="images/IMG_8559.jpg" alt="Photography portfolio image 4" width="300" height="200">
-
-            <img src="images/IMG_8564.jpg" alt="Photography portfolio image 5" width="300" height="200">
-
-            <img src="images/IMG_8755.jpg" alt="Photography portfolio image 6" width="300" height="200">
-          </div>
-        </div>
-      </div>
-      <div class="bottomgallery">
-        <div class="row">
-          <div class="col-12">
-            <img src="images/IMG_8762.jpg" alt="Photography portfolio image 7" width="300" height="200">
-
-            <img src="images/IMG_8769.jpg" alt="Photography portfolio image 8" width="300" height="200">
-
-            <img src="images/IMG_8772.jpg" alt="Photography portfolio image 9" width="300" height="200">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mystory">
-      <div id="aboutjump">
-        <div class="row">
-          <div class="col-12">
-            <h3>MY STORY</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p>MY HISTORY IN PHOTOGRAPHY<p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-2">
-          </div>
-          <div class="col-8">
-            <div id="abouttext">
-              <p>I used to hate being in photographs. Standing awkwardly looking at the shiny camera while trying to maintain a smile. But once your behind the camera it&apos;s a different story. It&apos;ll sound cliche and free spirityyy but it&apos;s such a great opportunity to frame your world looking for beauty.</p>
-              <p>I enjoy taking landscape photos, people in their happy unawares, studies on mundane objects or subtle concepts. But mostly just exploring and very new to photography.</p>
-              <p>Anyway enjoy photos of beautiful people and beautiful things!</p>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_8886.jpg" alt="Photography portfolio image 1" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Landscape</h3>
+                <p>Natural beauty captured in perfect light</p>
+              </div>
             </div>
           </div>
-          <div class="col-2">
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8898.jpg" alt="Photography portfolio image 2" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Portrait</h3>
+                <p>Capturing authentic moments</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8972.jpg" alt="Photography portfolio image 3" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Street Photography</h3>
+                <p>Life unfolding in candid moments</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8559.jpg" alt="Photography portfolio image 4" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Nature</h3>
+                <p>Exploring the beauty of the natural world</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8564.jpg" alt="Photography portfolio image 5" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Architecture</h3>
+                <p>Lines and forms in urban landscapes</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8755.jpg" alt="Photography portfolio image 6" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Documentary</h3>
+                <p>Telling stories through images</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8762.jpg" alt="Photography portfolio image 7" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Abstract</h3>
+                <p>Finding beauty in the details</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8769.jpg" alt="Photography portfolio image 8" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Travel</h3>
+                <p>Adventures captured through the lens</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/IMG_8772.jpg" alt="Photography portfolio image 9" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Fine Art</h3>
+                <p>Artistic expression through photography</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-        <div id="readmorebutton"><a href="#">READ MORE</a></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-    <footer>
-      <section class="bottomcontact">
-        <div id="contactjump"></div>
-        <div class="row">
-          <div class="col-12">
-            <h3>CONTACT ME OR VIEW MY OTHER PAGES</h3>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Story</h2>
+          <p class="section-subtitle">My journey in photography</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I used to hate being in photographs. Standing awkwardly looking at the shiny camera while trying to maintain a smile. 
+              But once you're behind the camera it's a different story. It might sound cliché and free-spirited, but it's such a 
+              great opportunity to frame your world looking for beauty.
+            </p>
+            <p>
+              I enjoy taking landscape photos, capturing people in their happy unaware moments, and studying mundane objects or 
+              subtle concepts. I'm mostly exploring and relatively new to photography, but I find joy in discovering the extraordinary 
+              in the ordinary.
+            </p>
+            <p>
+              Photography has taught me to see the world differently - to appreciate light, composition, and the stories that unfold 
+              around us every day. Each image is a moment frozen in time, a memory preserved, and a story waiting to be told.
+            </p>
+            <p class="about-signature">
+              Enjoy these photos of beautiful people and beautiful things!
+            </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/unboagable">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:changhyunmungai@gmail.com" target="_top">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p class="section-subtitle">Let's connect and share our love for photography</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-links">
+            <a href="https://www.instagram.com/unboagable" target="_blank" class="contact-link">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="mailto:changhyunmungai@gmail.com" class="contact-link">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/unboagable" target="_blank" class="contact-link">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/changhyunmungai" target="_blank" class="contact-link">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
-      </section>
-      <div class="row">
-        <div class="col-12">
-          <p>Chang-Hyun Mungai &copy; 2021</p>
-        </div>
-        <div class="credit">
-          <p class="copyright">©2017 <a href="https://github.com/ivanv257/Photography-Website/blob/master/index.html">html code</a></p>
-        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Chang-Hyun Mungai. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
